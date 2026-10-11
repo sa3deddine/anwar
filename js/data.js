@@ -54,7 +54,7 @@ export const portfolioData = {
         role: "Chef de projet & Concepteur du système d'automatisation.",
         technologies: ["Python", "MATLAB", "Node-RED", "Modbus RTU/TCP", "Arduino", "PIC16F"],
         results: "Réduction des surcharges réseau de 28% et lissage optimal des courbes de charge.",
-        image: "assets/project-ev.jpg",
+        image: "/assets/project-ev.jpg",
         detail: {
           problem: "Risque de dépassement de souscription et surcharge du transformateur lors de la recharge simultanée de plusieurs véhicules.",
           solution: "Implémentation d'un algorithme de régulation dynamique sous Python communiquant avec des variateurs et bornes en Modbus.",
@@ -75,7 +75,7 @@ export const portfolioData = {
         role: "Concepteur Matériel (PIC16F/Arduino) & Développeur Cloud IoT.",
         technologies: ["Microcontrôleur PIC16F", "Arduino IDE", "Node-RED", "Proteus", "MikroC", "Capteurs Humidité/Sol"],
         results: "Économie d'eau de 35% et automatisation totale des cycles d'arrosage.",
-        image: "assets/project-irrigation.jpg",
+        image: "/assets/project-irrigation.jpg",
         detail: {
           problem: "Gaspillage des ressources en eau et manque de réactivité face aux variations micro-climatiques.",
           solution: "Réseau de capteurs télémétriques reliés à un contrôleur central PIC/Arduino activant des électrovannes modulantes.",
@@ -96,7 +96,7 @@ export const portfolioData = {
         role: "Ingénieur Automaticien – Programmation SCL/Ladder & Design IHM WinCC.",
         technologies: ["SIEMENS TIA Portal", "S7-1200", "WinCC SCADA", "SCL", "Ladder", "PROFINET"],
         results: "Supervision temps réel intégrée 24/7 avec téléconduite et gestion préventive des pannes.",
-        image: "assets/project-scada.jpg",
+        image: "/assets/project-scada.jpg",
         detail: {
           problem: "Supervision obsolète nécessitant des interventions manuelles fréquentes et sans suivi des alarmes pompes.",
           solution: "Déploiement d'un automate Siemens S7-1200 avec réseau PROFINET et écrans synoptiques interactifs sous WinCC.",
@@ -117,7 +117,7 @@ export const portfolioData = {
         role: "Intégrateur Système SSI & Responsable Essais.",
         technologies: ["Centrale FINSECUR", "Caneco BT", "Autocad", "Bus RS485", "Normes NF S 61-970"],
         results: "Validation à 100% des matrices de corrélation pour le désenfumage et le compartimentage.",
-        image: "assets/project-fire.jpg",
+        image: "/assets/project-fire.jpg",
         detail: {
           problem: "Interconnexion rigoureuse exigée entre zones de détection et lignes de commande de sécurité d'évacuation.",
           solution: "Paramétrage des tableaux de corrélation sur la centrale modulaire FINSECUR et dimensionnement sur Caneco BT.",
@@ -318,7 +318,7 @@ export const portfolioData = {
         role: "Project Lead & Automation System Designer.",
         technologies: ["Python", "MATLAB", "Node-RED", "Modbus RTU/TCP", "Arduino", "PIC16F"],
         results: "Reduced power grid peak surges by 28% while smoothing demand curves.",
-        image: "assets/project-ev.jpg",
+        image: "/assets/project-ev.jpg",
         detail: {
           problem: "Transformer overload risk during peak hours when multiple industrial EVs charge simultaneously.",
           solution: "Implemented a Python-based dynamic load management algorithm communicating via Modbus with field drives.",
@@ -339,7 +339,7 @@ export const portfolioData = {
         role: "Hardware Designer (PIC16F/Arduino) & Cloud IoT Developer.",
         technologies: ["PIC16F MCU", "Arduino IDE", "Node-RED", "Proteus", "MikroC", "Soil Sensors"],
         results: "Achieved 35% water savings and fully automated watering cycles.",
-        image: "assets/project-irrigation.jpg",
+        image: "/assets/project-irrigation.jpg",
         detail: {
           problem: "Water wastage and slow manual response to sudden environmental fluctuations.",
           solution: "Wireless telemetry sensor network linked to a central PIC/Arduino controller activating modulating solenoid valves.",
@@ -360,7 +360,7 @@ export const portfolioData = {
         role: "Automation Engineer – SCL/Ladder Logic & WinCC HMI Design.",
         technologies: ["SIEMENS TIA Portal", "S7-1200", "WinCC SCADA", "SCL", "Ladder", "PROFINET"],
         results: "24/7 continuous SCADA supervision with remote control and preventive fault detection.",
-        image: "assets/project-scada.jpg",
+        image: "/assets/project-scada.jpg",
         detail: {
           problem: "Outdated control system requiring frequent manual intervention without active pump alarm logging.",
           solution: "Deployed a Siemens S7-1200 PLC with PROFINET industrial network and interactive WinCC SCADA screens.",
@@ -381,7 +381,7 @@ export const portfolioData = {
         role: "Safety System Integrator & Commissioning Engineer.",
         technologies: ["FINSECUR Panel", "Caneco BT", "Autocad", "RS485 Bus", "NF S 61-970 Standard"],
         results: "100% compliance verified across all smoke extraction and compartmentation matrices.",
-        image: "assets/project-fire.jpg",
+        image: "/assets/project-fire.jpg",
         detail: {
           problem: "Strict safety interlocks required between detection zones and emergency smoke damper actuators.",
           solution: "Configured correlation matrices on the modular FINSECUR panel and executed electrical sizing on Caneco BT.",
