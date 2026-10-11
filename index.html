@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Anwar Bencheikh &ndash; Ing&eacute;nieur Automatisme &amp; Informatique Industrielle</title>
+  <meta name="description" content="Portfolio d'Anwar Bencheikh, &eacute;l&egrave;ve ing&eacute;nieur en 5e ann&eacute;e &agrave; l'EMSI Rabat sp&eacute;cialis&eacute; en Automatisme, SCADA, IoT et Informatique Industrielle.">
+  <meta name="keywords" content="Anwar Bencheikh, Automatisme, Informatique Industrielle, EMSI Rabat, TIA Portal, SIEMENS, SCADA, WinCC, IoT, Node-RED, PLC, Stage PFE">
+  <meta name="author" content="Anwar BENCHEIKH">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Anwar Bencheikh &ndash; Ing&eacute;nieur Automatisme &amp; Informatique Industrielle">
+  <meta property="og:description" content="Portfolio de projets d'automatisation, de r&eacute;gulation industrielle, de syst&egrave;mes embarqu&eacute;s et d'IoT.">
+  <meta property="og:image" content="assets/photo.jpg">
+  <meta property="og:url" content="https://anwarbencheikh.dev">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/cursor.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-header">
+      <div class="preloader-logo">AB / 2024&ndash;2025</div>
+      <div class="preloader-status">
+        <span class="preloader-status-dot"></span>
+        <span>INITIALIZING PLC CORE...</span>
+      </div>
+    </div>
+    <div class="preloader-counter" id="preloader-count">00</div>
+    <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em;">
+      AUTOMATISME &bull; INFORMATIQUE INDUSTRIELLE &bull; EMSI RABAT
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-inner" aria-label="Navigation Principale">
+      <a href="#hero" class="nav-brand">
+        <span>ANWAR BENCHEIKH</span>
+        <span class="nav-brand-tag">ENG. 05</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">PROFIL</a></li>
+        <li><a href="#projects" class="nav-link">PROJETS</a></li>
+        <li><a href="#skills" class="nav-link">COMP&Eacute;TENCES</a></li>
+        <li><a href="#timeline" class="nav-link">PARCOURS</a></li>
+        <li><a href="#extracurricular" class="nav-link">PARASCOLAIRE</a></li>
+        <li><a href="#certifications" class="nav-link">CERTIFS</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-toggle" id="lang-toggle" aria-label="Changer de langue FR/EN">
+          &#127760; <span class="lang-text">EN</span>
+        </button>
+        <button class="btn-toggle" id="theme-toggle" aria-label="Mode sombre/clair">
+          <span class="theme-icon">&#127769;</span> <span class="theme-text">DARK</span>
+        </button>
+        <a href="#contact" class="btn-contact">STAGE / PFE</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ====== 01 HERO ====== -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+
+        <!-- Top bar -->
+        <div class="hero-top-bar">
+          <div class="section-number">01 // HERO</div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span id="hero-status-text">DISPONIBLE POUR STAGE PFE / PREMIER EMPLOI</span>
+          </div>
+        </div>
+
+        <!-- 2 columns: LEFT = typography | RIGHT = photo -->
+        <div class="hero-grid">
+
+          <!-- LEFT: Name + subtitle + CTA -->
+          <div class="hero-title-container">
+            <h1 class="giant-title">
+              <span class="hero-surname" id="hero-surname">BENCHEIKH</span>
+              <span class="hero-firstname" id="hero-firstname">ANWAR</span>
+            </h1>
+
+            <p class="hero-subtitle" id="hero-subtitle">
+              ING&Eacute;NIEUR EN AUTOMATISME &amp; INFORMATIQUE INDUSTRIELLE
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn-primary" id="hero-cta-primary">D&Eacute;COUVRIR MES PROJETS &rarr;</a>
+              <a href="#contact" class="btn-outline" id="hero-cta-contact">ME CONTACTER</a>
+            </div>
+          </div>
+
+          <!-- RIGHT: Real portrait photo -->
+          <div class="hero-portrait-wrapper">
+            <div class="hero-portrait-card">
+              <img
+                src="assets/photo.jpg"
+                alt="Anwar Bencheikh &ndash; Portrait professionnel"
+                class="hero-portrait-img"
+                loading="eager"
+              >
+              <div class="hero-portrait-overlay">
+                <span class="portrait-tag">EMSI RABAT &bull; 5E ANN&Eacute;E</span>
+                <span class="portrait-caption">ANWAR BENCHEIKH</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Marquee ticker -->
+      <div class="marquee-container" aria-hidden="true">
+        <div class="marquee-content">
+          <div class="marquee-item">
+            <span>AUTOMATISME S&Eacute;QUENTIEL</span> <span class="marquee-bullet">&bull;</span>
+            <span>INFORMATIQUE INDUSTRIELLE</span> <span class="marquee-bullet">&bull;</span>
+            <span>SIEMENS TIA PORTAL</span> <span class="marquee-bullet">&bull;</span>
+            <span>SCADA WINCC</span> <span class="marquee-bullet">&bull;</span>
+            <span>SMART INDUSTRY 4.0</span> <span class="marquee-bullet">&bull;</span>
+            <span>INTERNET OF THINGS (IoT)</span> <span class="marquee-bullet">&bull;</span>
+            <span>SYST&Egrave;MES EMBARQU&Eacute;S</span> <span class="marquee-bullet">&bull;</span>
+            <span>CANECO BT &amp; SCH&Eacute;MATIQUE</span> <span class="marquee-bullet">&bull;</span>
+          </div>
+          <div class="marquee-item">
+            <span>AUTOMATISME S&Eacute;QUENTIEL</span> <span class="marquee-bullet">&bull;</span>
+            <span>INFORMATIQUE INDUSTRIELLE</span> <span class="marquee-bullet">&bull;</span>
+            <span>SIEMENS TIA PORTAL</span> <span class="marquee-bullet">&bull;</span>
+            <span>SCADA WINCC</span> <span class="marquee-bullet">&bull;</span>
+            <span>SMART INDUSTRY 4.0</span> <span class="marquee-bullet">&bull;</span>
+            <span>INTERNET OF THINGS (IoT)</span> <span class="marquee-bullet">&bull;</span>
+            <span>SYST&Egrave;MES EMBARQU&Eacute;S</span> <span class="marquee-bullet">&bull;</span>
+            <span>CANECO BT &amp; SCH&Eacute;MATIQUE</span> <span class="marquee-bullet">&bull;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 02 ABOUT ====== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-number">02 // PROFIL</div>
+        <h2 class="section-heading">&Agrave; PROPOS DE MOI</h2>
+
+        <div class="about-grid">
+          <div>
+            <blockquote class="about-editorial-quote" id="about-quote">
+              "&Eacute;tudiant en 5e ann&eacute;e d'ing&eacute;nierie en informatique industrielle et automatisme s&eacute;quentiel. Motiv&eacute;, autonome et impliqu&eacute;."
+            </blockquote>
+          </div>
+          <div class="about-body">
+            <p id="about-p1"></p>
+            <p id="about-p2"></p>
+            <div class="about-highlights-grid" id="about-highlights"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 03 PROJECTS ====== -->
+    <section id="projects">
+      <div class="container">
+        <div class="projects-header-flex">
+          <div>
+            <div class="section-number">03 // PROJETS</div>
+            <h2 class="section-heading">PROJETS R&Eacute;ALIS&Eacute;S</h2>
+            <p class="section-subtitle">
+              S&eacute;lection de r&eacute;alisations en ing&eacute;nierie d'automatisme, supervision SCADA, agritech et syst&egrave;mes de s&eacute;curit&eacute;.
+            </p>
+          </div>
+        </div>
+        <div class="projects-list" id="projects-list"></div>
+      </div>
+    </section>
+
+    <!-- ====== 04 SKILLS ====== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-number">04 // COMP&Eacute;TENCES</div>
+        <h2 class="section-heading">COMP&Eacute;TENCES TECHNIQUES</h2>
+        <p class="section-subtitle">
+          Technologies, logiciels de CAO/DAI, langages de programmation et comp&eacute;tences relationnelles.
+        </p>
+        <div class="skills-tabs-container" id="skills-container"></div>
+      </div>
+    </section>
+
+    <!-- ====== 05 PARCOURS / TIMELINE ====== -->
+    <section id="timeline">
+      <div class="container">
+        <div class="section-number">05 // PARCOURS</div>
+        <h2 class="section-heading">EXP&Eacute;RIENCES &amp; FORMATION</h2>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem, 5vw, 4rem); margin-top: 2rem;">
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; margin-bottom: 2rem; color: var(--accent);">
+              // STAGES &amp; EXP&Eacute;RIENCES PRO
+            </h3>
+            <div class="timeline-container">
+              <div class="timeline-line"></div>
+              <div class="timeline-progress-line"></div>
+              <div id="timeline-exp-list"></div>
+            </div>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 800; margin-bottom: 2rem; color: var(--accent);">
+              // FORMATION ACAD&Eacute;MIQUE
+            </h3>
+            <div class="timeline-container">
+              <div class="timeline-line"></div>
+              <div id="timeline-edu-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== 06 EXTRACURRICULAR ====== -->
+    <section id="extracurricular">
+      <div class="container">
+        <div class="section-number">06 // PARASCOLAIRE</div>
+        <h2 class="section-heading">ACTIVIT&Eacute;S PARASCOLAIRES &amp; ENGAGEMENT</h2>
+        <p class="section-subtitle">
+          Vie associative, leadership &eacute;tudiant, animation d'ateliers et r&eacute;alisations &eacute;v&eacute;nementielles.
+        </p>
+        <div class="extracurricular-grid" id="extracurricular-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====== 07 CERTIFICATIONS ====== -->
+    <section id="certifications">
+      <div class="container">
+        <div class="section-number">07 // CERTIFICATIONS</div>
+        <h2 class="section-heading">CERTIFICATIONS &amp; ACCR&Eacute;DITATIONS</h2>
+        <div class="certifications-grid" id="certifications-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====== 08 LANGUAGES ====== -->
+    <section id="languages">
+      <div class="container">
+        <div class="section-number">08 // LANGUES</div>
+        <h2 class="section-heading">MA&Icirc;TRISE DES LANGUES</h2>
+        <div class="languages-grid" id="languages-grid"></div>
+      </div>
+    </section>
+
+    <!-- ====== 09 CONTACT ====== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-number">09 // CONTACT</div>
+
+        <div class="contact-wrapper">
+          <div>
+            <h2 class="contact-giant-cta" id="contact-cta-title">TRAVAILLONS ENSEMBLE</h2>
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2.5rem;" id="contact-subtitle">
+              &Agrave; la recherche d'un stage PFE ou d'une premi&egrave;re opportunit&eacute; professionnelle en ing&eacute;nierie d'automatisme.
+            </p>
+
+            <div class="contact-info-list">
+              <a href="mailto:anwar.bencheikh04@gmail.com" class="contact-info-item">
+                <div class="contact-icon">&#9993;</div>
+                <span>anwar.bencheikh04@gmail.com</span>
+              </a>
+              <a href="tel:+212661195314" class="contact-info-item">
+                <div class="contact-icon">&#128222;</div>
+                <span>+212 661 195 314</span>
+              </a>
+              <div class="contact-info-item">
+                <div class="contact-icon">&#128205;</div>
+                <span>Rabat, Maroc</span>
+              </div>
+            </div>
+
+            <a href="assets/cv-anwar-bencheikh.pdf" download="CV_Anwar_BENCHEIKH.pdf" class="btn-primary" id="contact-download-cv">
+              &#128196; T&Eacute;L&Eacute;CHARGER MON CV (PDF)
+            </a>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="form-name">NOM / ENTREPRISE</label>
+                <input type="text" id="form-name" class="form-input" required placeholder="Votre Nom / Entreprise">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-email">EMAIL</label>
+                <input type="email" id="form-email" class="form-input" required placeholder="votre.email@domaine.com">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="form-message">MESSAGE</label>
+                <textarea id="form-message" class="form-textarea" required placeholder="Votre message ou proposition de stage..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary" id="form-submit-btn" style="width: 100%; justify-content: center;">
+                ENVOYER LE MESSAGE &rarr;
+              </button>
+              <div id="form-feedback" style="display:none; font-family: var(--font-mono); font-size: 0.85rem; color: #10B981; margin-top: 1rem; text-align: center;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div>&copy; 2024&ndash;2025 ANWAR BENCHEIKH &bull; ING&Eacute;NIEUR AUTOMATISME &amp; INFORMATIQUE INDUSTRIELLE</div>
+    <div>RABAT, MAROC &bull; EMSI RABAT</div>
+  </footer>
+
+  <!-- Project Modal Drawer -->
+  <div class="modal-overlay" id="project-modal-overlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-drawer">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Fermer">&times;</button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

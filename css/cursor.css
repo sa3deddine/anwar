@@ -1,0 +1,70 @@
+/* ==========================================================================
+   ANWAR BENCHEIKH - CUSTOM CURSOR & HOVER FOLLOWERS
+   ========================================================================== */
+
+/* Hide default cursor on desktop */
+@media (pointer: fine) {
+  body {
+    cursor: default;
+  }
+}
+
+/* Custom Cursor Elements */
+.custom-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease, background-color 0.3s ease;
+}
+
+.custom-cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--text-main);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Cursor Hover states */
+.custom-cursor-ring.hovered {
+  width: 60px;
+  height: 60px;
+  border-color: var(--accent);
+  background-color: var(--accent-glow);
+}
+
+.custom-cursor-ring.hover-project {
+  width: 90px;
+  height: 90px;
+  background-color: var(--accent);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Hide custom cursor on touch devices */
+@media (pointer: coarse) {
+  .custom-cursor-dot, .custom-cursor-ring {
+    display: none !important;
+  }
+}
